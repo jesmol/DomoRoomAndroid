@@ -1,0 +1,179 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textView"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textTema"
+        android:text="Nombre del Tema"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="46dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tema deporte"
+        android:id="@+id/togDeporte"
+        android:checked="true"
+        android:layout_below="@+id/textTema"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/togCine"
+        android:layout_toStartOf="@+id/togCine" />
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tema Cine y Series"
+        android:id="@+id/togCine"
+        android:layout_alignTop="@+id/togDeporte"
+        android:layout_alignRight="@+id/textTema"
+        android:layout_alignEnd="@+id/textTema"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_toEndOf="@+id/textView"
+        android:checked="false" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rojo"
+        android:id="@+id/butRojo"
+        android:layout_above="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textStyle="bold"
+        android:textColor="#ff261d" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Azul"
+        android:id="@+id/butAzul"
+        android:layout_above="@+id/textView"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView"
+        android:textStyle="bold"
+        android:textColor="#3f45ff" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Verde"
+        android:id="@+id/butVerde"
+        android:layout_alignTop="@+id/butAzul"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_toEndOf="@+id/textView"
+        android:textStyle="bold"
+        android:textColor="#00d829" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Morado"
+        android:id="@+id/butMorado"
+        android:layout_alignTop="@+id/butVerde"
+        android:layout_toRightOf="@+id/butVerde"
+        android:layout_toEndOf="@+id/butVerde"
+        android:textStyle="bold"
+        android:textColor="#c035ff" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Naranja"
+        android:id="@+id/butNaranja"
+        android:layout_alignTop="@+id/textView"
+        android:layout_toRightOf="@+id/butVerde"
+        android:layout_toEndOf="@+id/butVerde"
+        android:textStyle="bold"
+        android:textSize="13dp"
+        android:textColor="#ffb937" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Amarilllo"
+        android:id="@+id/butAmar"
+        android:layout_alignTop="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/butAzul"
+        android:layout_toStartOf="@+id/butAzul"
+        android:textSize="11dp"
+        android:textStyle="bold"
+        android:textColor="#fff800" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Blanco"
+        android:id="@+id/butBlanco"
+        android:layout_alignTop="@+id/textView"
+        android:layout_toRightOf="@+id/butAmar"
+        android:layout_alignRight="@+id/butAzul"
+        android:layout_alignEnd="@+id/butAzul"
+        android:textStyle="bold"
+        android:textColor="#fffbf3" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rosado"
+        android:id="@+id/butRosado"
+        android:layout_alignTop="@+id/textView"
+        android:layout_toRightOf="@+id/butBlanco"
+        android:layout_toLeftOf="@+id/butNaranja"
+        android:layout_toStartOf="@+id/butNaranja"
+        android:textStyle="bold"
+        android:textColor="#6cff627c" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Deportes"
+        android:id="@+id/textDeportes"
+        android:layout_below="@+id/togDeporte"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Cine y Series"
+        android:id="@+id/textCine"
+        android:layout_below="@+id/togCine"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_toEndOf="@+id/textView" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:contentDescription="true"
+        android:layout_alignWithParentIfMissing="false"
+        android:background="@mipmap/ic_launcher"
+        android:layout_marginBottom="29dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

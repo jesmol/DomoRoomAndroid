@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/textoChequeo"
+        android:layout_below="@+id/butTemas" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/comandoVoz"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:background="@drawable/abc_ic_voice_search_api_mtrl_alpha"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Click para capturar el comando de Voz"
+        android:id="@+id/textBut"
+        android:layout_above="@+id/comandoVoz"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textoChequeo"
+        android:layout_above="@+id/textBut"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cargar Temas"
+        android:id="@+id/butTemas"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/textBut"
+        android:layout_alignStart="@+id/textBut"
+        android:layout_alignRight="@+id/textBut"
+        android:layout_alignEnd="@+id/textBut" />
+
+</RelativeLayout>
